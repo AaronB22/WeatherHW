@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
@@ -12,9 +12,25 @@
 
 </head>
 <body>
+    <div class="jumbotron">
+        <div class="h1 text-center">Welcome</div>
+        <div class="lead text-center">Choose what city you want to check weather below!</div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row justify-content-start justify-content-center">
+            <p class="col-md-8 text-center" id="">Search a City</p>
+            <input type="text" class="col-md-8" id="hmPageInput" >
+            <button class="col-md-6" id="searchBtnHp">Search City</button>
+        </div>
+    </div>
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="searchAPI.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

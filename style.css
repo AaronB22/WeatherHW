@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.floatRight{
+    float: right;
+}
+.floatLeft{
+    float:left
+}
+.historyDiv{
+    position:absolute;
+    width: 100px;
+    bottom: -247px;
+    left: 10px;
+}
+
+.histBackGround{
+    border: 1px solid black;
+    background-color: white;
+    width: 200px;
+    height: 70px; 
+    left: 20px;
+    top:100px
+}
