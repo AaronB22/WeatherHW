@@ -4,9 +4,52 @@ body{
 }
 .left-block{
     background-color:#e9ecef ;
-    width: 40%;
+    width: 20%;
+    position: relative;
+    bottom: 35px;
     
 }
+.mainObj{
+   background-color: blue;
+   position: relative;
+   bottom:500px;
+}
+.foreCast{
+    background-color: burlywood;
+    position: relative;
+    height: 10px;
+    
+}
+.forOne{
+    position: relative;
+    bottom: 400px;
+    
+}
+.forTwo{
+    position: relative;
+    top: -700px;
+    left: 220px;
+}
+
+.forThree{
+    position: absolute;
+    top:-400px;
+    left: 454px;
+}
+
+.forFour{
+    position: relative;
+    left: 658px ;
+    top: -1000px;
+}
+
+.forFive{
+    position: relative;
+    top: -1300px;
+    left:877px
+}
+
+
 .jumColor{
     color: white;
     background-color: grey;
@@ -18,14 +61,21 @@ body{
     float:left
 }
 .historyDiv{
-    position:absolute;
+    position: relative;
     width: 150px;
-    bottom: -250px;
+    bottom: -150px;
     left: 10px;
+    
 
+}
+.foreCastBackground{
+    background-color: coral;
+    width: 200px;
+    height: 300px;
 }
 
 .histBackGround{
+
     border: 1px solid black;
     background-color: white;
     width: 250px;
