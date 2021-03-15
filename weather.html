@@ -13,7 +13,6 @@
 <body>
 <div class="jumbotron jumColor">
     <h1 class='h1 text-center'>Weather Dashboard</h1>
-    <button id='backBtn'>back</button>
 </div>
 
  <div class='container floatLeft left-block' style="height: 1000px;">
@@ -21,22 +20,23 @@
  <div class="container floatLeft">
  <input type="text" class="userInput">
  <button class=" searchButton btnSearch btn-primary " id="btnSearch">""</button></div>
+ <button class=" btn-secondary" id="unitButton">Metric</button>
  </div>
- <div class="historyDiv" id="history">
-    <div class="histOne histBackGround"></div>
-    <div class="histTwo histBackGround"></div>
-    <div class="histThree histBackGround"></div>
-    <div class="histFour histBackGround"></div>
-    <div class="histFive histBackGround"></div>
-    <div class="histSix histBackGround"></div>
-    <div class="histSeven histBackGround"></div>
-    <div class="histEight histBackGround"></div>
+ <div class=" historyDiv" id="history">
+    <div class=" row histOne histBackGround" id="histOne"></div>
+    <div class=" row histTwo histBackGround"id="histTwo"></div>
+    <div class="row histThree histBackGround"id="histThree"></div>
+    <div class="row histFour histBackGround" id="histFour"></div>
+    <div class="row histFive histBackGround" id="histFive"></div>
+    <div class="row histSix histBackGround" id="histSix"></div>
+    <div class="row histSeven histBackGround" id="histSeven"></div>
+    <div class="row histEight histBackGround" id="histEight"></div>
 </div>
 <button class="test" >test</button>
 
 <div class="mainObj container">
     <div class="mainWeather">
-        <p>Seattle Date</p>
+        <p class="h1 mainCity" id="mainCity">City</p>
         <p class="tempMain" id="tempMain">temp</p>
         <p id="humMain">Hum</p>
         <p id="windMain">wind</p>
@@ -46,31 +46,31 @@
 </div>
 <div class="foreCast container">
     <div class='row forOne foreCastBackground'>
-        <h3 class='container'>Date</h3>
-        <div class='container'>Image</div>
-        <div class='container'>temp</div>
-        <div class='container'>hum</div>
+        <h3 class='h2 container d0' id="d0">Date</h3>
+        <div class='container i0' id="i0">Image</div>
+        <div class='container t0' id="t0">temp</div>
+        <div class='container hu0' id="hu0">hum</div>
     </div>
     <div class='row foreCastBackground forTwo'>
-        <h3 class='container'>Date</h3>
-        <div class='container'>Image</div>
-        <div class='container'>temp</div>
-        <div class='container'>hum</div></div>
+        <h3 class='container d1' id="d1">Date</h3>
+        <div class='container i1' id="i1">Image</div>
+        <div class='container t1' id="t1">temp</div>
+        <div class='container hu1' id="hu1">hum</div></div>
     <div class='row foreCastBackground forThree'>
-        <h3 class='container'>Date</h3>
-        <div class='container'>Image</div>
-        <div class='container'>temp</div>
-        <div class='container'>hum</div></div>
+        <h3 class='container d2' id="d2">Date</h3>
+        <div class='container i2' id="i2">Image</div>
+        <div class='container t2'id="t2">temp</div>
+        <div class='container hu2' id="hu2">hum</div></div>
     <div class='row foreCastBackground forFour'>
-        <h3 class='container'>Date</h3>
-        <div class='container'>Image</div>
-        <div class='container'>temp</div>
-        <div class='container'>hum</div></div>
+        <h3 class='container d3' id="d3">Date</h3>
+        <div class='container i3' id="i3">Image</div>
+        <div class='container t3' id="t3">temp</div>
+        <div class='container hu3' id="hu3">hum</div></div>
     <div class='row foreCastBackground forFive'>
-        <h3 class='container'>Date</h3>
-        <div class='container'>Image</div>
-        <div class='container'>temp</div>
-        <div class='container'>hum</div></div>
+        <h3 class='container d4' id="d4">Date</h3>
+        <div class='container i4' id="i4">Image</div>
+        <div class='container t4' id="t4">temp</div>
+        <div class='container hu4' id="hu4">hum</div></div>
 
 
 
@@ -81,6 +81,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="searchAPI.js"></script>
-    <script src="script-searchPage.js"></script>
 </body>
 </html>
