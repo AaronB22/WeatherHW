@@ -49,7 +49,6 @@ function unitType(){
     
 }
 
-
 histArray[0].textContent=localStorage.getItem("weStorage0")
 histArray[1].textContent=localStorage.getItem("weStorage1")
 histArray[2].textContent=localStorage.getItem("weStorage2")
@@ -82,9 +81,6 @@ function storage(){
     histArray[7].textContent=localStorage.getItem("weStorage7")
 }
 
-
-
-
 fDate[0].textContent =month +" "+ (dayParse + 1)
 fDate[1].textContent =month +" "+ (dayParse + 2)
 fDate[2].textContent =month +" "+ (dayParse + 3)
@@ -101,7 +97,7 @@ function getWeather(){
     unitType()
     const weatherKey="c80f9a4fde963804b68e5e32b0e539de";
     const geoCodingUrl='http://api.openweathermap.org/geo/1.0/direct?q='+userSearch.value+'&limit&appid='+ weatherKey 
-    document.getElementById("mainCity").textContent= userSearch.value +" "+ date
+    document.getElementById("mainCity").textContent= userSearch.value +", "+ date
     fetch(geoCodingUrl)
     .then(function (response){
         
@@ -122,9 +118,9 @@ function getWeather(){
                 .then(function(weatherData){
                     console.log(weatherData)
                     const temp = weatherData.daily[0].temp.day
-                    document.getElementById('tempMain').textContent="temperature "+ temp+ unitTemp
-                    document.getElementById('humMain').textContent='humidity '+ weatherData.daily[0].humidity +"%"
-                    document.getElementById('windMain').textContent="Wind Speed " +weatherData.daily[0].wind_speed + unitSpeed
+                    document.getElementById('tempMain').textContent="Temperature: "+ temp+ unitTemp
+                    document.getElementById('humMain').textContent='Humidity: '+ weatherData.daily[0].humidity +"%"
+                    document.getElementById('windMain').textContent="Wind Speed: " +weatherData.daily[0].wind_speed + unitSpeed
                     document.getElementById('uvMain').textContent="UVI =" +weatherData.daily[0].uvi
                     document.getElementById("uvMain").style.display="block"
                     console.log(weatherData.daily[0].clouds)
@@ -226,14 +222,5 @@ function getWeather(){
                     fHum[2].textContent= "Humidity: " +weatherData.daily[3].humidity +"%"
                     fHum[3].textContent= "Humidity: " +weatherData.daily[4].humidity +"%"
                     fHum[4].textContent= "Humidity: " +weatherData.daily[5].humidity +"%"
-                    
-                    
-                    console.log(weatherURL)
-                    
-                    
-                    
-                })}
-                )})})}
-                
-
+                   })})})})}
                 
