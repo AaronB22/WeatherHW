@@ -4,55 +4,86 @@ body{
 }
 .left-block{
     background-color:#e9ecef ;
-    width: 20%;
+    width: 350px;
     position: relative;
-    bottom: 35px;
+    bottom: 33px;
+    height: 1000px;
     
+}
+.divText{
+    font-weight: bold;
+    position: relative;
+    left: 10px
+}
+.weatherPost{
+    position: relative;
+    left: 100px;
 }
 .mainObj{
-   background-color: blue;
-   position: relative;
-   bottom:00px;
+   background-color: lightblue;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+   bottom:70px;
+   right:180px;
+   margin-right: auto;
+   margin-left: auto;
+   
+   border: 5px solid black;
 }
+.mainWeather{
+
+    font-size: 33px;
+    height:300px;
+    margin: 70px;
+}
+.uvMain{
+    width: 200px;
+    display: none;
+    border:2px solid black ;
+    border-radius: 25%;
+    font-weight: bold;
+    text-align: center;
+}
+
 .foreCast{
-    background-color: burlywood;
+    
     position: relative;
-    height: 10px;
-    top:500px
+    height: 300px;
+    top:00px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+   width: 100%;
+    right:180px
 }
-.forOne{
+
+.btnSearch{
+    height:60px ;
+    width: 60px;
     position: relative;
-    bottom: 400px;
+   bottom: 9px;
     
 }
-.forTwo{
+.unitButton{
+    width: 180px;
+    height: 80px;
+    font-size:40px ;
     position: relative;
-    top: -700px;
-    left: 220px;
-}
+    left:30px
 
-.forThree{
-    position: absolute;
-    top:-400px;
-    left: 454px;
 }
-
-.forFour{
-    position: relative;
-    left: 658px ;
-    top: -1000px;
+.userInput{
+    height:60px ;  
+  width: 200px;
+  font-size:40px ;
+  bottom: 10px;
 }
-
-.forFive{
-    position: relative;
-    top: -1300px;
-    left:877px
-}
-
 
 .jumColor{
     color: white;
     background-color: grey;
+    width:100% ;
 }
 .floatRight{
     float: right;
@@ -65,14 +96,16 @@ body{
     width: 250px;
     height: 70px; 
     left: 20px;
-    top:-1000px
+    top:-940px
     
 
 }
 .foreCastBackground{
-    background-color: coral;
-    width: 200px;
-    height: 300px;
+    border:5px solid black ;
+    font-size: 30px;
+    height: 400px;
+    width: 300px;
+    background-color:#008bff;
 }
 
 .histBackGround{
@@ -88,3 +121,173 @@ position: relative;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     opacity: .8;
 }
+/* 
+
+@media screen and (max-width: 1700px){
+    .weatherPost{
+        top:400px ;
+    }
+    .historyDiv{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        bottom:1000px;
+        gap:40px;
+       
+        text-align: center;
+        right: 100px;
+        
+    }
+    .floatLeft{
+        float: none;
+    }
+    .userInput{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+ */
+
+
+ @media screen and (max-width:1700px){
+     .weatherPost{
+         width: 800px;
+         left: 600px;
+         bottom: 900px;
+     }
+     .foreCast{
+         
+         column-count: 2;
+         column-gap: 20px;
+         column-rule-style: solid;
+         column-rule-width: 40px;
+         flex-wrap: wrap;
+     }
+ }
+ @media screen and (max-width:1450px){
+     .weatherPost{
+         width: 600px;
+     }
+     .foreCast{
+         
+        column-count: 2;
+        column-gap: 20px;
+        column-rule-style: solid;
+        column-rule-width: 40px;
+        flex-wrap: wrap;
+    }
+ }
+
+ @media screen and (max-width:1230px){
+     .weatherPost{
+         bottom: 100px;
+         margin-right: auto;
+         margin-left: auto;
+         left: 0px;
+         top: 100px;
+     }
+     .foreCast{
+         left:0px
+     }
+     .mainObj{
+         left:0px
+     }
+     .floatLeft{
+         float: none;
+     }
+     .historyDiv{
+         display: none;
+     }
+     .left-block{
+         height: 350px;
+         width: 100%;
+         margin-left: auto;
+         margin-right: auto;
+         height: 200px;
+     }
+     .divText{
+         text-align: center;
+     }
+     .userInput{
+         width: 900px;
+     }
+     .btnSearch{
+         width: 300px;
+         top: 20px;
+         height: 70px;
+     }
+     .unitButton{
+         left: 600px;
+         bottom: 50px;
+         height: 70px;
+         width: 300px;
+     }
+     .forFive{
+         margin-right: auto;
+         margin-left: auto;
+     }
+ }
+
+ @media screen and (max-width: 1000px){
+     .left-block{
+         width:800px;
+     }
+     .unitButton{
+         left: 300px;
+         width: 200px;
+     }
+     .btnSearch{
+         width: 200px;
+     }
+     .userInput{
+         width: 500px;
+         display: flex;
+         flex: content;
+     }
+ }
+
+ @media screen and (max-width:600px){
+     .userInput{
+         width: 400px;
+         display: flex;
+         flex: content;
+     }
+     .mainObj{
+        font-size: 20px;
+        padding: 0%;
+        margin: 0%;
+        height: 600px;
+
+     }
+     .left-block{
+         width: 500px;
+     }
+     .unitButton{
+         left: 250px;
+         width: 200px;
+         font-size: 20px;
+     }
+     .btnSearch{
+         width: 200px;
+         font-size: 20px;
+     }
+     .weatherPost{
+         width: 450px;
+     }
+     .forOne{
+        margin-right: auto;
+        margin-left: auto;
+     }
+     .forTwo{
+        margin-right: auto;
+        margin-left: auto;
+     }
+     .forThree{
+        margin-right: auto;
+        margin-left: auto;
+     }
+     .forFour{
+        margin-right: auto;
+        margin-left: auto;
+     }
+ }
