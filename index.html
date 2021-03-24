@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://kit.fontawesome.com/dd84008035.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="jumbotron jumColor">
+    <h1 class='h1 text-center'>Weather Dashboard</h1>
+</div>
+
+ <div class='container floatLeft left-block'>
+ <div class ="row h3 divText">Search for a City</div>
+ <div class="container floatLeft">
+     <input type="text" class="userInput">
+     <button class=" searchButton btnSearch btn-primary " id="btnSearch"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+    </svg></button></div>
+  
+    <button class=" btn-secondary unitButton" id="unitButton">Metric</button>
+    
+</div>
+<div class=" historyDiv" id="history">
+    <div class=" row histOne histBackGround" id="histOne"></div>
+    <div class=" row histTwo histBackGround"id="histTwo"></div>
+    <div class="row histThree histBackGround"id="histThree"></div>
+    <div class="row histFour histBackGround" id="histFour"></div>
+    <div class="row histFive histBackGround" id="histFive"></div>
+    <div class="row histSix histBackGround" id="histSix"></div>
+    <div class="row histSeven histBackGround" id="histSeven"></div>
+    <div class="row histEight histBackGround" id="histEight"></div>
+</div>
+
+<div class="weatherPost">
+<div class="mainObj container">
+    <div class="mainWeather">
+        <p class="h1 mainCity" id="mainCity"></p>  <i id="mainImg" class="fas " style='font-size:36px'></i>
+        <p class="tempMain" id="tempMain"></p>
+        <p id="humMain"></p>
+        <p id="windMain"></p>
+        <p id="uvMain" class="uvMain"></p>
+
+    </div>
+</div>
+<div class="foreCast container">
+    <div class='row forOne foreCastBackground forCastWidth'>
+        <h3 class='h2 container d0' id="d0">Date</h3>
+        <div class='container i0 fas' id="i0"></div>
+        <div class='container t0' id="t0"></div>
+        <div class='container hu0' id="hu0"></div>
+    </div>
+    <div class='row foreCastBackground forCastWidth forTwo'>
+        <h3 class='container d1' id="d1">Date</h3>
+        <div class='container i1 fas' id="i1"></div>
+        <div class='container t1' id="t1"></div>
+        <div class='container hu1' id="hu1"></div></div>
+    <div class='row foreCastBackground forCastWidth forThree'>
+        <h3 class='container d2' id="d2">Date</h3>
+        <div class='container i2 fas' id="i2"></div>
+        <div class='container t2'id="t2"></div>
+        <div class='container hu2' id="hu2"></div></div>
+    <div class='row foreCastBackground forCastWidth forFour'>
+        <h3 class='container d3' id="d3">Date</h3>
+        <div class='container i3 fas' id="i3"></div>
+        <div class='container t3' id="t3"></div>
+        <div class='container hu3' id="hu3"></div></div>
+    <div class='row foreCastBackground forCastWidth forFive'>
+        <h3 class='container d4' id="d4">Date</h3>
+        <div class='container i4 fas' id="i4"></div>
+        <div class='container t4' id="t4"></div>
+        <div class='container hu4' id="hu4"></div></div>
+
+
+
+</div></div>
+
+<div id=test></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="searchAPI.js"></script>
+</body>
+</html>
