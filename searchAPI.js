@@ -154,6 +154,10 @@ function getWeather(){
                          console.log("cloudTest")
                         document.getElementById("mainImg").classList.add("fa-cloud")
                     }
+                    if (weatherData.daily[0].rain>1){
+                        document.getElementById("mainImg").classList.add("fa-cloud-rain")
+                    }
+                      
 
                     if (weatherData.daily[1].clouds<33){
                         fImg[0].classList.add("fa-sun")
@@ -164,6 +168,9 @@ function getWeather(){
                      if (weatherData.daily[1].clouds>66 ){
                          console.log("cloudTest")
                         fImg[0].classList.add("fa-cloud-sun")
+                    }
+                    if (weatherData.daily[1].rain>1){
+                        fImg[0].classList.add("fa-cloud-rain")
                     }
 
                     if (weatherData.daily[2].clouds<33){
@@ -177,6 +184,9 @@ function getWeather(){
                          console.log("cloudTest")
                         fImg[1].classList.add("fa-cloud")
                     }
+                    if (weatherData.daily[2].rain>1){
+                        fImg[1].classList.add("fa-cloud-rain")
+                    }
 
                     if (weatherData.daily[3].clouds<33){
                         fImg[2].classList.add("fa-sun")
@@ -188,6 +198,10 @@ function getWeather(){
                          console.log("cloudTest")
                         fImg[2].classList.add("fa-cloud")
                     }
+                    if (weatherData.daily[3].rain>1){
+                        fImg[2].classList.add("fa-cloud-rain")
+                    }
+
 
                     if (weatherData.daily[4].clouds<33){
                         fImg[3].classList.add("fa-sun")
@@ -196,10 +210,14 @@ function getWeather(){
                         fImg[3].classList.add("fa-cloud-sun")
                 
                      }
+                     
                      if (weatherData.daily[4].clouds>66 ){
                          console.log("cloudTest")
-                        fImg[3].classList.add("fa-cloud")
-                    }
+                         fImg[3].classList.add("fa-cloud")
+                        }
+                        if (weatherData.daily[4].rain>1){
+                           fImg[3].classList.add("fa-cloud-rain")
+                       }
                     if (weatherData.daily[5].clouds<33){
                         fImg[4].classList.add("fa-sun")
                      }
@@ -210,6 +228,10 @@ function getWeather(){
                          console.log("cloudTest")
                         fImg[4].classList.add("fa-cloud")
                     }
+                    if (weatherData.daily[5].rain>1){
+                        fImg[4].classList.add("fa-cloud-rain")
+                    }
+
 
                     fTemp[0].textContent="Temp: "+ weatherData.daily[1].temp.day + unitTemp;
                     fTemp[1].textContent= "Temp: "+ weatherData.daily[2].temp.day+ unitTemp;
