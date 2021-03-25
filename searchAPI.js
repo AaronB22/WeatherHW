@@ -96,7 +96,7 @@ function getWeather(){
     storage()
     unitType()
     const weatherKey="c80f9a4fde963804b68e5e32b0e539de";
-    const geoCodingUrl='http://api.openweathermap.org/geo/1.0/direct?q='+userSearch.value+'&limit&appid='+ weatherKey 
+    const geoCodingUrl='https://api.openweathermap.org/geo/1.0/direct?q='+userSearch.value+'&limit&appid='+ weatherKey 
     document.getElementById("mainCity").textContent= userSearch.value +", "+ date
     fetch(geoCodingUrl)
     .then(function (response){
